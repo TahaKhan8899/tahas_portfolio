@@ -20,7 +20,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
 
         
-        <div className="container px-4 mx-auto relative">
+        <div className="container px-4 mx-auto relative pt-16 md:pt-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left column - Text content */}
             <div className="space-y-8">
