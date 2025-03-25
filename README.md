@@ -34,3 +34,43 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Adding Images
+
+This portfolio is prepared to work with images for a more personalized look. Here's how to add your own images:
+
+### Adding a Headshot
+
+1. Place your headshot image in the `/public/images/` directory
+2. Open `src/app/page.tsx` and uncomment the Image component in the hero section
+3. Update the src path to point to your image file
+
+```jsx
+<Image 
+  src="/images/your-headshot.jpg" 
+  alt="Taha Khan" 
+  fill 
+  className="object-cover" 
+/>
+```
+
+### Adding Project Images
+
+1. Place your project images in the `/public/images/projects/` directory
+2. Name them consistently, like `project-name.jpg`
+3. In `src/components/sections/projects.tsx`, uncomment the Image components and update the src paths
+
+```jsx
+<Image 
+  src={`/images/projects/${project.title.toLowerCase().replace(/\s+/g, '-')}.jpg`}
+  alt={project.title}
+  fill
+  className="object-cover"
+/>
+```
+
+### Recommended Image Sizes
+
+- Headshot: 400x400px (1:1 aspect ratio)
+- Project images: 800x450px (16:9 aspect ratio)
+- Make sure to optimize your images for web to keep page load times fast
