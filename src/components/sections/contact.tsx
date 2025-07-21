@@ -11,7 +11,7 @@ const socialLinks = {
   github: "https://github.com/TahaKhan8899",
   linkedin: "https://www.linkedin.com/in/taha-khan8/",
   twitter: "https://x.com/TahaKhan8899",
-  email: "taha.khan8899@gmail.com",
+  email: "taha@airenosystems.com",
   location: "Toronto, Canada"
 };
 

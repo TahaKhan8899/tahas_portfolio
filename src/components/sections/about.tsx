@@ -31,7 +31,7 @@ export function AboutSection() {
               </h2>
               <div className="prose prose-invert max-w-none">
                 <p>
-                  With 4+ years of experience in software development, I specialize in building AI-powered applications
+                  With 5+ years of experience in software development, I specialize in building AI-powered applications
                   that solve real-world problems. My journey includes working at Amazon as a Software Development Engineer,
                   where I gained valuable experience in building scalable systems.
                 </p>
@@ -41,7 +41,7 @@ export function AboutSection() {
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 rounded-lg bg-blue-500/5 border border-blue-500/10">
                 <h3 className="text-blue-400 font-medium mb-1">Experience</h3>
-                <p className="text-3xl font-bold text-blue-500">4+ Years</p>
+                <p className="text-3xl font-bold text-blue-500">5+ Years</p>
               </div>
               <div className="p-4 rounded-lg bg-purple-500/5 border border-purple-500/10">
                 <h3 className="text-purple-400 font-medium mb-1">Projects</h3>
