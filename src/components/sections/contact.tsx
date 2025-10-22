@@ -13,7 +13,7 @@ const socialLinks = {
   twitter: "https://x.com/TahaKhan8899",
   email: "taha@agentarc.dev",
   location: "Toronto, Canada",
-  phone: "906-749-0067"
+  phone: "905-749-0067"
 };
 
 export function ContactSection() {
