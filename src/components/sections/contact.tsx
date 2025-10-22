@@ -11,8 +11,9 @@ const socialLinks = {
   github: "https://github.com/TahaKhan8899",
   linkedin: "https://www.linkedin.com/in/taha-khan8/",
   twitter: "https://x.com/TahaKhan8899",
-  email: "taha@airenosystems.com",
-  location: "Toronto, Canada"
+  email: "taha@agentarc.dev",
+  location: "Toronto, Canada",
+  phone: "906-749-0067"
 };
 
 export function ContactSection() {
@@ -148,6 +149,10 @@ export function ContactSection() {
                   >
                     {socialLinks.email}
                   </a>
+                </div>
+                <div>
+                  <h4 className="text-sm font-medium text-white mb-2">Phone</h4>
+                  <p className="text-muted-foreground">{socialLinks.phone}</p>
                 </div>
                 <div>
                   <h4 className="text-sm font-medium text-white mb-2">Location</h4>
