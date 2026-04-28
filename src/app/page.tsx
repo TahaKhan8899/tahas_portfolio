@@ -116,14 +116,14 @@ export default function Home() {
       {/* Reviews Section */}
       <ReviewsSection />
 
-      {/* About Section */}
-      <AboutSection />
-
       {/* Projects Section */}
       <ProjectsSection />
 
       {/* Services Section */}
       <ServicesSection />
+
+      {/* About Section */}
+      <AboutSection />
 
       {/* Contact Section */}
       <ContactSection />
