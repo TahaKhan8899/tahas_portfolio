@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { AboutSection } from "@/components/sections/about";
+import { ReviewsSection } from "@/components/sections/reviews";
 import { ProjectsSection } from "@/components/sections/projects";
 import { ServicesSection } from "@/components/sections/services";
 import { ContactSection } from "@/components/sections/contact";
@@ -26,29 +27,31 @@ export default function Home() {
             <div className="space-y-8">
               <h1 className="text-5xl md:text-7xl font-bold">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 animate-gradient">
-                  Taha Khan
+                  AgentArc
                 </span>
               </h1>
-              
+
               <h2 className="text-2xl md:text-3xl text-muted-foreground font-light">
-                <span className="text-primary font-normal">AI Developer</span>
+                <span className="text-primary font-normal">AI Consultancy</span>
                 <span className="mx-2">|</span>
-                <span className="text-purple-400 font-normal">Ex-Amazon SWE</span>
-                <span className="mx-2">|</span>
-                <span>Building AI-powered solutions</span>
+                <span>Founded by</span>
+                <span className="text-purple-400 font-normal mx-2">Taha Khan</span>
+                <br />
+                <span className="text-muted-foreground/70 text-xl">Ex-Amazon, Instacart Software Engineer</span>
               </h2>
 
               <p className="text-lg text-muted-foreground max-w-xl">
-                Transforming ideas into intelligent solutions. Specializing in AI development,
-                GPT integrations, and building scalable applications that make a difference.
+                We build AI-powered solutions that replace manual work, convert more leads,
+                and scale your business — from custom voice agents and GPT workflows to
+                full-stack web applications.
               </p>
 
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  <Link href="#contact">Get in Touch</Link>
+                  <Link href="#contact">Work With Us</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="border-blue-500/20 hover:bg-blue-500/10">
-                  <Link href="#projects">View Projects</Link>
+                  <Link href="#projects">See Our Work</Link>
                 </Button>
               </div>
 
@@ -109,6 +112,9 @@ export default function Home() {
           </svg>
         </div>
       </section>
+
+      {/* Reviews Section */}
+      <ReviewsSection />
 
       {/* About Section */}
       <AboutSection />

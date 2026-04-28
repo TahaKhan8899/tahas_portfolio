@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const navItems = [
+  { name: "Reviews", href: "#reviews" },
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Services", href: "#services" },
@@ -26,8 +27,8 @@ export function Nav() {
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: "0px",
-      threshold: 0.5,
+      rootMargin: "-20% 0px -60% 0px",
+      threshold: 0,
     };
 
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
@@ -55,7 +56,7 @@ export function Nav() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
-            Taha Khan
+            AgentArc
           </Link>
           <div className="hidden md:flex items-center space-x-2">
             {navItems.map((item) => {

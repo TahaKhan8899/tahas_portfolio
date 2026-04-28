@@ -72,10 +72,10 @@ export function ServicesSection() {
       <div className="container px-4 mx-auto relative">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500">
-            Services
+            What We Build
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Specialized solutions tailored to your AI and software development needs
+            End-to-end AI solutions designed to automate your operations, convert more leads, and scale your business
           </p>
         </div>
 
@@ -96,7 +96,7 @@ export function ServicesSection() {
               </h3>
 
               <p className="text-muted-foreground mb-4">
-                Specialized in AI automation solutions, creating intelligent systems that enhance productivity and user experience.
+                We build custom AI agents, chatbots, and GPT-powered workflows that automate your highest-value repetitive tasks.
               </p>
 
               <ul className="space-y-2 text-sm text-muted-foreground">
@@ -138,7 +138,7 @@ export function ServicesSection() {
               </h3>
 
               <p className="text-muted-foreground mb-4">
-                Modern web applications built with the latest technologies, focusing on performance and user experience.
+                High-converting websites and full-stack applications built with modern frameworks and AI-enhanced features baked in.
               </p>
 
               <ul className="space-y-2 text-sm text-muted-foreground">
@@ -180,7 +180,7 @@ export function ServicesSection() {
               </h3>
 
               <p className="text-muted-foreground mb-4">
-                Expert guidance on AI implementation, architecture design, and technical strategy.
+                Not sure where AI fits in your business? We map out exactly where automation adds the most value and how to get there.
               </p>
 
               <ul className="space-y-2 text-sm text-muted-foreground">

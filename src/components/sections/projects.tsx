@@ -15,27 +15,45 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Photoreal Virtual Staging",
+    description: "Turned empty property photos into MLS-ready, photoreal staged images to help buyers visualize spaces. Delivered before/after sets with tight QA: correct perspective, natural lighting/shadows, accurate scale, and clutter-free realism.",
+    technologies: ["Virtual Staging", "AI Image Generation", "AI Image Editing", "Photoshop"],
+    imagePlaceholder: "/images/stagedLiving.jpg",
+  },
+  {
+    title: "AI Receptionist for Remodelling Company",
+    description: "Built an AI-powered voice receptionist to handle inbound calls, qualify leads, and book appointments automatically. Reduced missed calls and improved lead response time — fully deployable on any website.",
+    technologies: ["ElevenLabs", "OpenAI", "AI Agent Development", "CRM Automation"],
+    imagePlaceholder: "/images/voiceReceptionist.png",
+  },
+  {
+    title: "AI-Powered Webflow Website for Home Renovation Contractor",
+    description: "Designed and built a full Webflow site including Home, About, Services, Projects, Blog, and Booking pages. Integrated AI to automatically generate SEO-optimized blog articles, improving organic reach.",
+    technologies: ["Webflow", "AI Content Creation", "SEO", "CMS"],
+    imagePlaceholder: "/images/renoSite.png",
+  },
+  {
+    title: "Stock Research Web App — Toronto Stock Exchange",
+    description: "A financial research platform serving 2M+ active users with real-time market data, stock quotes, charts, and financial news. Built key front-end and back-end features across client and server layers.",
+    technologies: ["React", "Node.js", "PostgreSQL", "GraphQL", "Redux", "JavaScript"],
+    imagePlaceholder: "from-cyan-600 to-blue-700",
+  },
+  {
     title: "AI Personalized Workout Generator",
     description: "A workout generator app that uses a specialized knowledge base to create calisthenics programs for a fitness coach, saving 20+ hours/week.",
     technologies: ["Next.js", "TypeScript", "OpenAI API", "Tailwind CSS", "RAG"],
-    // demoLink: "https://demo.example.com",
-    // githubLink: "https://github.com/example/ai-code-assistant",
     imagePlaceholder: "/images/workoutAppImg.png",
   },
   {
     title: "Shopify Revenue Forecasting Tool",
     description: "Replaces manual spreadsheet-based forecasting with an AI automated solution that provides timely, accurate data and predictive insights to support strategic decision-making.",
     technologies: ["Python", "NumPy", "OpenAI API", "FastAPI"],
-    // demoLink: "https://demo.example.com",
-    // githubLink: "https://github.com/example/smart-doc-analyzer",
     imagePlaceholder: "from-purple-500 to-blue-500",
   },
   {
     title: "AI Customer Survey Analyzer",
     description: "Saves 30+ hours per week of manually reviewing customer satisfaction surveys and suggesting product improvements based on survey results.",
     technologies: ["React", "Node.js", "AWS", "OpenAI API"],
-    // demoLink: "https://demo.example.com",
-    // githubLink: "https://github.com/example/ai-chat",
     imagePlaceholder: "from-cyan-500 to-blue-500",
   },
 ];

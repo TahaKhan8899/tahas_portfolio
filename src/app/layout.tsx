@@ -10,22 +10,22 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Taha Khan | AI Developer & Ex-Amazon SWE",
-  description: "AI Developer | Ex-Amazon SWE | Building AI-powered solutions",
-  keywords: ["AI Developer", "Software Engineer", "Amazon", "GPT", "AI Solutions"],
+  title: "AgentArc | AI Consultancy",
+  description: "AgentArc builds AI-powered solutions for businesses — custom agents, GPT workflows, voice AI, and full-stack development.",
+  keywords: ["AI Consultancy", "AI Agents", "GPT Workflows", "Voice AI", "AI Automation", "Software Development"],
   authors: [{ name: "Taha Khan" }],
-  creator: "Taha Khan",
+  creator: "AgentArc",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://tahascodecamp.com",
-    title: "Taha Khan | AI Developer & Ex-Amazon SWE",
-    description: "AI Developer | Ex-Amazon SWE | Building AI-powered solutions",
+    url: "https://agentarc.dev",
+    title: "AgentArc | AI Consultancy",
+    description: "AgentArc builds AI-powered solutions for businesses — custom agents, GPT workflows, voice AI, and full-stack development.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Taha Khan | AI Developer & Ex-Amazon SWE",
-    description: "AI Developer | Ex-Amazon SWE | Building AI-powered solutions",
+    title: "AgentArc | AI Consultancy",
+    description: "AgentArc builds AI-powered solutions for businesses — custom agents, GPT workflows, voice AI, and full-stack development.",
   },
 };
 

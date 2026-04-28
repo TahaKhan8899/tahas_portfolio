@@ -15,10 +15,10 @@ export function AboutSection() {
         <div className="flex flex-col items-center mb-16 relative">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-full blur-3xl -z-10"></div>
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
-            About Me
+            About AgentArc
           </h2>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto text-lg">
-            Passionate about building AI-powered solutions that solve real-world problems
+            An AI consultancy built to help businesses automate, convert, and scale with intelligent software
           </p>
         </div>
 
@@ -27,13 +27,13 @@ export function AboutSection() {
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-4">
               <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-                Professional Background
+                Who We Are
               </h2>
               <div className="prose prose-invert max-w-none">
                 <p>
-                  With 5+ years of experience in software development, I specialize in building AI-powered applications
-                  that solve real-world problems. My journey includes working at Amazon as a Software Development Engineer,
-                  where I gained valuable experience in building scalable systems.
+                  AgentArc is an AI consultancy founded by Taha Khan, an Ex-Amazon Software Development Engineer
+                  with 5+ years of experience building scalable systems. We partner with businesses to design and
+                  deploy AI solutions that eliminate manual work, capture more leads, and create real competitive advantage.
                 </p>
               </div>
             </div>
@@ -44,14 +44,14 @@ export function AboutSection() {
                 <p className="text-3xl font-bold text-blue-500">5+ Years</p>
               </div>
               <div className="p-4 rounded-lg bg-purple-500/5 border border-purple-500/10">
-                <h3 className="text-purple-400 font-medium mb-1">Projects</h3>
+                <h3 className="text-purple-400 font-medium mb-1">Projects Delivered</h3>
                 <p className="text-3xl font-bold text-purple-500">50+</p>
               </div>
             </div>
 
             <blockquote className="p-4 border-l-2 border-blue-500 bg-gradient-to-r from-blue-500/10 to-purple-600/10 rounded-r-lg">
               <p className="italic text-lg">
-                "I believe AI is transforming how we build software, and I'm excited to be part of this revolution."
+                "Every business has repetitive, high-value work that AI can own. We find it, build it, and deliver it."
               </p>
             </blockquote>
           </div>

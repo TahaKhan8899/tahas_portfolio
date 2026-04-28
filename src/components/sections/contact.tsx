@@ -66,10 +66,10 @@ export function ContactSection() {
       <div className="container px-4 mx-auto relative">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500">
-            Get in Touch
+            Work With Us
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind? Let's discuss how we can work together to bring your ideas to life
+            Have a process to automate or a product to build? Tell us about it and we'll get back to you within 24 hours.
           </p>
         </div>
 
