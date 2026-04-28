@@ -15,7 +15,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Photoreal Virtual Staging",
+    title: "AI Photoreal Virtual Staging",
     description: "Turned empty property photos into MLS-ready, photoreal staged images to help buyers visualize spaces. Delivered before/after sets with tight QA: correct perspective, natural lighting/shadows, accurate scale, and clutter-free realism.",
     technologies: ["Virtual Staging", "AI Image Generation", "AI Image Editing", "Photoshop"],
     imagePlaceholder: "/images/stagedLiving.jpg",

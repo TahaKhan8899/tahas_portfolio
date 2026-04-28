@@ -41,6 +41,7 @@ const reviews: Review[] = [
   },
   {
     name: "Arthur Modell",
+    company: "WH Property",
     project: "Virtual Staging for Interior Images",
     rating: 5,
   },
@@ -79,7 +80,15 @@ export function ReviewsSection() {
             Client Reviews
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-            What our clients say — verified reviews from Upwork
+            What our clients say — verified reviews from{" "}
+            <a
+              href="https://www.upwork.com/freelancers/tahakhan91"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 underline underline-offset-2 transition-colors"
+            >
+              Upwork
+            </a>
           </p>
 
           {/* Upwork badges */}
