@@ -2,8 +2,8 @@ import React from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 
-// Replace with your actual Calendly link once set up
 const BOOK_CALL_URL = "#contact";
 const PHONE = "905-749-0067";
 const PHONE_HREF = "tel:9057490067";
@@ -699,36 +699,46 @@ function FAQ() {
 
 function FinalCTA() {
   return (
-    <section id="contact" className="bg-blue-950 py-24 px-4">
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-          Stop Losing Jobs to Voicemail.
-        </h2>
-        <p className="text-blue-200 text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
-          Book a free 15-minute call. We&rsquo;ll show you exactly how much
-          revenue you&rsquo;re leaving on the table — no pitch, just numbers.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <BookCallBtn dark />
-          <a
-            href={PHONE_HREF}
-            className="border-2 border-white/30 hover:border-white text-white font-semibold text-lg px-10 py-4 rounded-xl transition-colors flex items-center justify-center gap-2"
-          >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-            </svg>
-            Call {PHONE}
-          </a>
+    <section id="contact" className="bg-blue-950 py-20 px-4">
+      <div className="max-w-3xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5 leading-tight">
+            Stop Losing Jobs to Voicemail.
+          </h2>
+          <p className="text-blue-200 text-xl max-w-2xl mx-auto leading-relaxed">
+            Pick a time below — 15 minutes, no pitch, just your numbers and a
+            clear plan.
+          </p>
         </div>
 
-        <p className="mt-6 text-blue-300 text-sm">
-          Or email:{" "}
-          <a href={`mailto:${EMAIL}`} className="underline hover:text-white transition-colors">
+        {/* GHL inline booking calendar */}
+        <div className="bg-white rounded-2xl overflow-hidden shadow-2xl">
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/booking/OyWMD0u7mDySrQnKY0dU"
+            style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "680px" }}
+            scrolling="no"
+            id="OyWMD0u7mDySrQnKY0dU_1778332550251"
+          />
+        </div>
+
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-blue-300 text-sm">
+          <a
+            href={PHONE_HREF}
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+            </svg>
+            Prefer to call? {PHONE}
+          </a>
+          <span className="hidden sm:block text-white/20">·</span>
+          <a href={`mailto:${EMAIL}`} className="hover:text-white transition-colors underline">
             {EMAIL}
           </a>
-        </p>
+        </div>
       </div>
+
+      <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="afterInteractive" />
     </section>
   );
 }
@@ -775,6 +785,12 @@ export default function HvacPage() {
         <FinalCTA />
       </main>
       <Footer />
+      <Script
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        data-widget-id="69ff38b3ba1fce40f9037f30"
+        strategy="afterInteractive"
+      />
     </div>
   );
 }
