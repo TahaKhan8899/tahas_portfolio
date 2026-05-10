@@ -127,6 +127,17 @@ export default function Home() {
 
       {/* Contact Section */}
       <ContactSection />
+
+      {/* Footer */}
+      <footer className="w-full border-t border-border/40 py-8 px-4 relative z-10">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+          <p>&copy; {new Date().getFullYear()} AgentArc. All rights reserved.</p>
+          <div className="flex items-center gap-6">
+            <Link href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-foreground transition-colors">Terms of Service</Link>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 } 

@@ -58,7 +58,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="w-full py-24 bg-gradient-to-b from-background via-background/90 to-background relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full pointer-events-none">
         <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-blue-500/10 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-1/4 left-1/4 w-72 h-72 bg-purple-500/10 rounded-full filter blur-3xl"></div>
       </div>

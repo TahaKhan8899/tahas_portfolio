@@ -80,7 +80,7 @@ function HvacNav() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-sm">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="font-bold text-xl text-blue-900">
+          <Link href="/hvac" className="font-bold text-xl text-blue-900">
             AgentArc
           </Link>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
@@ -747,20 +747,16 @@ function FinalCTA() {
 
 function Footer() {
   return (
-    <footer className="bg-white border-t border-slate-200 py-8 px-4">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
-        <div className="flex items-center gap-2">
-          <Link href="/" className="font-bold text-blue-900 hover:text-blue-700 transition-colors">
-            AgentArc
-          </Link>
-          <span>&middot; AI Consultancy &middot; Milton, Ontario, Canada</span>
+    <footer className="bg-white border-t border-slate-200 py-6 px-4">
+      <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-500">
+        <Link href="/hvac" className="font-bold text-blue-900 hover:text-blue-700 transition-colors">
+          AgentArc
+        </Link>
+        <div className="flex items-center gap-5">
+          <Link href="/privacy-policy" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
+          <Link href="/terms" className="hover:text-slate-900 transition-colors">Terms of Service</Link>
         </div>
-        <div className="flex items-center gap-6">
-          <Link href="/" className="hover:text-slate-900 transition-colors">Home</Link>
-          <a href="#faq" className="hover:text-slate-900 transition-colors">FAQ</a>
-          <a href={`mailto:${EMAIL}`} className="hover:text-slate-900 transition-colors">{EMAIL}</a>
-        </div>
-        <p>&copy; {new Date().getFullYear()} AgentArc. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} AgentArc.</p>
       </div>
     </footer>
   );
